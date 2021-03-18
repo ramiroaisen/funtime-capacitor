@@ -1,0 +1,23 @@
+{
+  "appId": "com.friends.funtime",
+  "appName": "Funtime Friends",
+  "bundledWebRuntime": true,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "linuxAndroidStudioPath": "studio",
+  "server": {
+    "url": "https://admin.funtime.com.ar",
+    "allowNavigation": ["*.funtime.com.ar"]
+  },
+  "android": {
+    "overrideUserAgent": "funtime.android"
+  },
+  "ios": {
+    "overrideUserAgent": "funtime.ios"
+  }
+}
