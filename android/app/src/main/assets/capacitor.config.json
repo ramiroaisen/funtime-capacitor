@@ -11,8 +11,8 @@
   },
   "linuxAndroidStudioPath": "studio",
   "server": {
-    "url": "https://admin.funtime.com.ar",
-    "allowNavigation": ["*.funtime.com.ar"]
+    "url": "https://friends.funtime.com.ar",
+    "allowNavigation": ["friends.funtime.com.ar"]
   },
   "android": {
     "overrideUserAgent": "funtime.android"
