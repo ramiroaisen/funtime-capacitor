@@ -7,29 +7,88 @@ html, body {
   margin: 0;
   height: 100%;
   overflow: hidden;
-  display: flex;
-  background-color: #ff0000;
 }
 
-#offline {
-  display: flex;
+body {
+  background-image: url(../img/page-bg.png);
+  background-repeat: repeat;
+  background-position: 50% 0;
+}
+
+#splash {
+  display: none;
   align-items: center;
   justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  
-  margin: auto;
+  bottom: 0;
+  right: 0;
   display: none;
+  background-color: #8114BB;
 }
 
-#loading {
+#splash.visible {
+  display: flex;
+}
+
+#splash-img {
+  margin: auto;
+  width: 50vmin; 
+  height: 50vmin;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../img/splash.png);
+}
+
+#offline {
+  display: none;
   font-size: 2rem;
   margin: auto;
+  flex: 1;
 }
 
-.visible {
+#offline.visible {
   display: block;
+}
+
+#header {
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #8114BB;
+}
+
+#header-logo {
+  width: 12rem;
+  height: 2.5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(../img/header.png);
+  margin-inline-start: 1rem;
+}
+
+#offline-content {
+  font-size: 1.25rem;
+  color: #111;
+  font-weight: 600;
+  margin: 2.5rem 1.5rem;
+}
+
+#reload {
+  font: inherit;
+  border: 0;
+  margin: 0;
+  outline: 0;
+  margin-top: 2.5rem;
+  appearance: none;
+  user-select: none;
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  background: #8114BB;
+  border-radius: 0.25rem;
 }

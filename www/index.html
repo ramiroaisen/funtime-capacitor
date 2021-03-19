@@ -12,11 +12,21 @@
   <meta name="theme-color" content="#31d53d">
 </head>
 <body>
-  <div id="loading">
-    Cargando...
+  <div id="splash" class="visible">
+    <div id="splash-img"></div>
   </div>
   <div id="offline">
-    <div id="offline-img"></div>
+    <div id="header">
+      <div id="header-logo"></div>
+    </div>
+    <div id="offline-content">
+      Ups! Al parecer no tenés una conexión a internet
+      <div class="reload-wrap">
+        <button id="reload">
+          Recargar
+        </button>
+      </div>
+    </div>
   </div>
   <!--<script src="capacitor.js"></script>-->
   <script src="js/index.js"></script>
