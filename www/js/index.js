@@ -1,9 +1,10 @@
 (() => {
-  Capacitor.Plugins.SplashScreen.hide();
   
   const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
   
   document.querySelector("#reload").onclick = () => location.reload();
+
+  let first = true;
 
   const loop = async () => {
     while(true) {
@@ -15,8 +16,12 @@
         location.assign("https://friends.funtime.com.ar");
         break;
       } else {
-        document.querySelector("#splash").classList.remove("visible");
-        document.querySelector("#offline").classList.add("visible");
+        if(first) {
+          document.querySelector("#splash").classList.remove("visible");
+          document.querySelector("#offline").classList.add("visible");
+        } else {
+          first = false;
+        }
         await sleep(500);
       }
     }
