@@ -19,6 +19,7 @@
         if(first) {
           document.querySelector("#splash").classList.remove("visible");
           document.querySelector("#offline").classList.add("visible");
+          Capacitor.Plugins.SplashScreen.hide();
         } else {
           first = false;
         }
